@@ -1,0 +1,17 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "vanilla": "concurrently --kill-others \"pnpm --filter backend start\"  \"pnpm --filter van-tech start\"",
+    "vue": "concurrently --kill-others \"pnpm --filter backend start\"  \"pnpm --filter vue-tech start\"",
+    "vue-ts": "concurrently --kill-others \"pnpm --filter backend start\"  \"pnpm --filter vue-ts-tech start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

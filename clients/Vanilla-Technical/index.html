@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/intellective-mark.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intellective Tech-JR</title>
+  </head>
+  <body>
+    <main id="app">
+      <section id="hero" style="position:relative;">
+        <h1>
+        Welcome to the <br> Intellective <br>Pokemon Challenge
+      </h1>
+      <img class="logo" src="/intellective-mark.png" alt="Intellective Mark">
+      </section>
+      <div id="main">
+        <section id="fav-container">
+          <div class="card-container">
+            <img class="card-image" src="./ProfOak.png" alt="Professor Oak from Pokemon" height="260" > 
+            <p class="card-name">Card Name</p>
+            <table style:width="100%">
+              <tr>
+                <th>Stat</th>
+                <th>Power</th>
+              </tr>
+              <tr>
+                <td>Strength</td>
+                <td>100</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <section id="poke-list" class="list-container">
+        <div class="card-container">
+          <img class="card-image" src="./ProfOak.png" alt="Professor Oak from Pokemon" height="100" > 
+          <p class="card-name">Card Name</p>
+        </div>
+        <div class="card-container">
+          <img class="card-image" src="./ProfOak.png"  alt="Professor Oak from Pokemon" height="100" > 
+          <p class="card-name">Card Name</p>
+        </div>
+        <div class="card-container">
+          <img class="card-image" src="./ProfOak.png"  alt="Professor Oak from Pokemon" height="100" > 
+          <p class="card-name">Card Name</p>
+        </div>
+        <div class="card-container">
+          <img class="card-image" src="./ProfOak.png" alt="Professor Oak from Pokemon" height="100" > 
+          <p class="card-name">Card Name</p>
+        </div>
+      </section>
+      </div>
+    <aside>
+      <div>
+        <h2>
+          This page is using HTML and CSS, but it's all in one component! <br>
+          It needs data from the api! 😖
+        </h2>
+        <div  class="text-left info">
+            Make sure the local proxy is running: <br><code>pnpm start</code>
+            Retrieve all pokemon  <br> METHOD <code>GET</code><br> URL <code> http://localhost:5050/pokemon</code>
+            Retreive specifc pokemon info  <br> METHOD <code>GET</code><br> URL <code> http://localhost:5050/pokemon/{pokemon_name}</code>
+          
+        </div>
+      </div>
+    </aside>
+  </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
