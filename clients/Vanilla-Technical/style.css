@@ -56,6 +56,14 @@ table {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.info {
+  text-align: left;
+}
+
+.info li {
+  margin:1rem;
+}
+
 .logo {
   position: absolute;
   top: 20%;
