@@ -1,18 +1,18 @@
 /**
- * Hoisting
- * It will return undefined and "I am a var variable"
- * Because of hoisting, the variable is declared before the console.log
- * But it is not initialized, so it is undefined
+ * Question 1
  */
 function hoistingProblem() {
     console.log(varVariable);
     var varVariable = "I am a var variable";
     console.log(varVariable);
 }
+hoistingProblem() // Prints...
+
+
 
 
 /**
- * Simulates a user interacting with a messaging app.
+ * Question 2
  */
 function messagingScenario() {
     sendMessageRegular(); 
@@ -23,7 +23,7 @@ function messagingScenario() {
         console.log("Message sent via regular function");
     }
     
-    var sendMessageArrow = () => {
+    var sendMessageArrow = function ()  {
         console.log("Message sent via arrow function");
     };
     
@@ -32,4 +32,4 @@ function messagingScenario() {
     };
 }
 
-messagingScenario();
+messagingScenario(); // Prints

@@ -1,5 +1,5 @@
 /**
- * Simulates a user profile with personal information.
+ * Question 1
  */
 class UserProfile {
   constructor(age, height) {
@@ -14,9 +14,7 @@ class UserProfile {
 }
 
 const user = new UserProfile(25, 175);
-
 user.updateAge(26);
-
 user = new UserProfile(27, 175); 
 
-console.log(`Age: ${user.age}, Height: ${user.height}`);
+console.log(`Age: ${user.age}, Height: ${user.height}`); //Prints ...

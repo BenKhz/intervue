@@ -1,6 +1,8 @@
+/**
+ * Question 1
+ */
 async function fetchCartTotalFromServer() {
   const cartTotal = 200;
-
   return cartTotal;
 }
 
@@ -14,5 +16,4 @@ async function checkCartTotal() {
   }
 }
 
-// Check if the user qualifies for a special discount based on their cart total
-checkCartTotal();
+checkCartTotal(); // Prints...
