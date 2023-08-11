@@ -8,7 +8,9 @@ const cors = require('cors');
 app.use(cors({ origin: '*'}));
 
 app.get("/api/pokemon", (req, res) => {
-  listPokemon().then((r) => {
+  
+  listPokemon(req.query).then((r) => {
+    console.log(req.query)
     let isError = Math.random() * 100 > 75;
     if (isError) {
       res.status(500).send("Excessive traffic. Please try your request again.");
