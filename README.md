@@ -59,9 +59,10 @@ Methodology:
 * Create an initial commit.
 * Spin up interview environment.
 
-## Junior Testing:
+## Vanilla JS:
 
-* Live Coding:
+* Live Coding: (Feel free to offer reasonable assistance)
+  
     * Starting from a file, make an api call and render a card list of the response. (Only vanilla javascript)
         * Look for clean execution. Good encapsulation, clarity of code, good separation, and graceful error handling.
         * Assess candidates ability to quickly search for answers and gauge research. (Tight google searches, doc referencing, etc...)
@@ -74,7 +75,7 @@ Methodology:
     * (optional) Discuss what benefits typescript brings to a codebase. What drawbacks?
     * (optional) Discuss CSS Frameworks with the same Pros and Cons type of talk.
 
-## Mid:
+## Vue/Vuetify:
 
 * Live Coding: (Feel free to offer reasonable assistance)
     * Explain the local backend will provide all the data they need. Endpoints shouild be documented / partially provided in the client side
@@ -92,6 +93,11 @@ Methodology:
     * Ask about position attribute. What do they do? How does position relate to z-index and stacking contexts?
 
 
-## Senior:
+## Vue/Vuetify w/ TS, pinia, vue router
+
+   * Live coding:
+     Intent is to have a vue ts app that consumes the Vue/Vuetify app from above. Test should include base code for a page, and use vu-router to navigate to another page displaying the vue.
+
+      * We're looking for comprehension around Vue's setup. Ideas are to change the theme, change build commands, link packages in monorepo,, etc..etc...
 
 
