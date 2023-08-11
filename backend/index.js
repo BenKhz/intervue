@@ -3,6 +3,7 @@ const app = express();
 const port = 5050;
 const { listPokemon, getPokemon } = require("./utils");
 const cors = require('cors');
+var colors = require('colors');
 
 // Set cross origin requests policy to "Definitely not protected or secure in any way."
 app.use(cors({ origin: '*'}));
@@ -30,5 +31,9 @@ app.get("/api/pokemon/:name", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Intellective Backend Listening on port: ${port}.`);
+  console.log(' *****************************************************\n'.green,
+  '*                                                   *\n'.green,
+ '*'.green, 'Intellective API proxy Listening on port:', `${port}.`.blue, '  *\n'.green,
+ '*                                                   *\n'.green,
+ '*****************************************************'.green);
 });
